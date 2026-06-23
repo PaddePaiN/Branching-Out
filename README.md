@@ -3,102 +3,118 @@ Codio Assessment
 
 # Branching-Out
 
-A simple Python application that loads user data from a JSON file and allows filtering users by name, email, or age.
+A Python CLI project for practicing Git, GitHub workflows, and user data filtering.
 
-## Features
+---
 
-* Filter users by name (case-insensitive)
-* Filter users by email (case-insensitive)
-* Filter users by age
-* Interactive command-line interface
-* User-friendly error handling
-* PEP 8 compliant code
+## 📌 Description
 
-## Requirements
+This project loads user data from a `users.json` file and allows filtering users by different criteria via a command-line interface.
 
-* Python 3.10+
+It is designed for learning:
 
-## Installation
+* Git branching
+* Feature development
+* Input handling in Python
+* JSON processing
+* Clean code structure (PEP 8)
 
-Clone the repository:
+---
 
-```bash
-git clone https://github.com/<your-username>/Branching-Out.git
-```
+## 🚀 Features
 
-Navigate to the project directory:
+* Filter users by **name**
+* Filter users by **email**
+* Filter users by **age**
+* Interactive command-line menu
+* Input validation (prevents crashes)
+* Case-insensitive search for name and email
 
-```bash
-cd Branching-Out
-```
+---
 
-## Usage
+## 📁 Project Structure
 
-Run the application:
-
-```bash
-python main.py
-```
-
-Choose a filter option:
-
-```text
-What would you like to filter by? (name, email, age):
-```
-
-### Example
-
-```text
-What would you like to filter by? (name, email, age): email
-Enter an email: alice@example.com
-```
-
-## Project Structure
-
-```text
+```text id="proj1"
 Branching-Out/
 ├── main.py
 ├── users.json
 └── README.md
 ```
 
-## Available Filters
+---
 
-### Name
+## ▶️ Usage
 
-Searches for users by name.
+Run the program:
 
-### Email
+```bash id="run1"
+python main.py
+```
 
-Searches for users by email address.
+You will see:
 
-### Age
+```text id="menu1"
+What would you like to filter by? (name, email, age):
+```
 
-Searches for users by age.
+---
 
-## Error Handling
+## 🔎 Examples
 
-Invalid filter options are handled gracefully:
+### Name filter
 
-```text
+```text id="ex1"
+What would you like to filter by? (name, email, age): name
+Enter a name: Alice
+```
+
+### Email filter
+
+```text id="ex2"
+What would you like to filter by? (name, email, age): email
+Enter an email: alice@example.com
+```
+
+### Age filter
+
+```text id="ex3"
+What would you like to filter by? (name, email, age): age
+Enter an age: 25
+```
+
+---
+
+## ⚠️ Error Handling
+
+Invalid inputs are handled safely:
+
+* Wrong filter option:
+
+```text id="err1"
 Invalid filter option. Please choose 'name', 'email', or 'age'.
 ```
 
-## Learning Goals
+* Invalid age input:
 
-This project was created to practice:
+```text id="err2"
+Invalid input: age must be a number.
+```
 
-* Git branching strategies
-* Feature development workflows
-* Creating meaningful commits
-* GitHub collaboration
-* JSON processing in Python
-* Writing clean, maintainable Python code
+---
 
-## Author
+## 🧠 Learning Goals
+
+This project demonstrates:
+
+* Git branching workflow
+* Feature-based development
+* Python functions and modular design
+* Working with JSON data
+* Input validation and error handling
+* Writing clean, maintainable code (PEP 8)
+
+---
+
+## 👨‍💻 Author
 
 Patrick Förderer
-
-```
-```
-
